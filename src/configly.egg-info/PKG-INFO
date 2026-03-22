@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: configly
+Version: 0.1.0
+Summary: Zero-boilerplate configuration management with env vars, validation, and secrets
+Author: Teja
+License: MIT
+Requires-Python: >=3.10
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: hypothesis; extra == "dev"
+Requires-Dist: pyyaml; extra == "dev"
+Requires-Dist: tomli; python_version < "3.11" and extra == "dev"

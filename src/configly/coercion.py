@@ -106,8 +106,8 @@ def coerce(value: Any, target_type: Any) -> Any:
             return value
         return coerce_bool(str(value))
 
-    # list or list[T]
-    if origin is list:
+    # list or list[T] (bare list has no origin)
+    if target_type is list or origin is list:
         if isinstance(value, list):
             if args:
                 return [_coerce_single(str(item), args[0]) if not isinstance(item, args[0]) else item for item in value]

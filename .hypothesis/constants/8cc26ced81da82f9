@@ -1,0 +1,4 @@
+# file: /Volumes/Teja_T7_M4/clawd/configly/src/configly/loader.py
+# hypothesis_version: 6.151.9
+
+['"', '#', "'", '--config.', '.env', '.env.local', '.json', '.toml', '.yaml', '.yml', '=', '_', 'export ', 'r', 'rb', 'replace', 'utf-8']

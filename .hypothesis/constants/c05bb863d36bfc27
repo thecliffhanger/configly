@@ -1,0 +1,4 @@
+# file: /Volumes/Teja_T7_M4/clawd/configly/src/configly/coercion.py
+# hypothesis_version: 6.151.9
+
+['"', "'", ',', '.', '0', '1', 'Union', '[', ']', '__name__', '_configly_marker', 'f', 'false', 'n', 'no', 'off', 'on', 't', 'true', 'y', 'yes']

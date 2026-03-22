@@ -37,7 +37,7 @@ def parse_dotenv(path: str | Path) -> dict[str, str]:
     current_value = []
     in_multiline = False
 
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8", errors="replace") as f:
         for raw_line in f:
             line = raw_line.rstrip("\n")
 
@@ -110,7 +110,7 @@ def parse_dotenv_v2(path: str | Path) -> dict[str, str]:
     in_multiline = False
     _quote_char = '"'
 
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8", errors="replace") as f:
         for raw_line in f:
             line = raw_line.rstrip("\n")
 

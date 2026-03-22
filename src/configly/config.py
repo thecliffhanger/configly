@@ -225,10 +225,7 @@ def _make_settings_class(cls: type, prefix: str, config_file: str | Path | None,
         """Return dict with all secret fields masked."""
         return to_dict(self)
     
-    def from_env(self, **overrides):
-        """Reload from environment (class method behavior via function)."""
-        # Create new instance
-        return type(self)(**overrides)
+    cls.from_env = classmethod(lambda cls, **overrides: cls(**overrides))
     
     cls.__init__ = __init__
     cls.__setattr__ = __setattr__
@@ -237,6 +234,6 @@ def _make_settings_class(cls: type, prefix: str, config_file: str | Path | None,
     cls.freeze = freeze
     cls.to_dict = to_dict
     cls.masked = masked
-    cls.from_env = from_env
+    # from_env is already set above as classmethod
     
     return cls

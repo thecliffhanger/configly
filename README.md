@@ -1,11 +1,15 @@
 # configly
 
+[![PyPI version](https://badge.fury.io/py/configly.svg)](https://pypi.org/project/configly)
+[![Python versions](https://img.shields.io/pypi/pyversions/configly.svg)](https://pypi.org/project/configly)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Zero-boilerplate configuration management with env vars, validation, and secrets.
 
 ## Installation
 
 ```bash
-pip install -e .
+pip install configly
 ```
 
 ## Quick Start
@@ -48,3 +52,7 @@ print(settings.masked()) # {"DATABASE_URL": "...", "API_KEY": "***", ...}
 ## License
 
 MIT
+
+---
+
+Part of the [thecliffhanger](https://github.com/thecliffhanger) open source suite.

@@ -1,9 +1,19 @@
 Metadata-Version: 2.4
 Name: configly-lib
-Version: 0.1.0
+Version: 0.5.0
 Summary: Zero-boilerplate configuration management with env vars, validation, and secrets
-Author: Teja
+Author-email: Ravi Teja Prabhala Venkata <raviteja.prabhala@gmail.com>
 License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
 Requires-Python: >=3.10
 Provides-Extra: dev
 Requires-Dist: pytest>=7.0; extra == "dev"

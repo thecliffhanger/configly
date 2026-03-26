@@ -9,7 +9,7 @@ Zero-boilerplate configuration management with env vars, validation, and secrets
 ## Installation
 
 ```bash
-pip install configly
+pip install configly-lib
 ```
 
 ## Quick Start

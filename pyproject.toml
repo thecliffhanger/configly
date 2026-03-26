@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Zero-boilerplate configuration management with env vars, validation, and secrets"
 license = {text = "MIT"}
 requires-python = ">=3.10"
-authors = [{name = "Teja"}]
+authors = [{name = "Ravi Teja Prabhala Venkata"}]
 dependencies = []
 
 [project.optional-dependencies]
